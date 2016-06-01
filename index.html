@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="omdbSearch" ng-cloak>
+<head>
+  <meta charset="UTF-8">
+  <title>OMDb Angular</title>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/controllers.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <base href="/">
+</head>
+<body>
+  <div ng-controller="HomeController">
+    <h1>Angular OMDb API Search</h1>
+    <form name="searchForm" ng-submit="searchAll(home.searchTitles)" novalidate>
+      <label for="searchInput"><strong>Search Movie by Title</strong></label>
+      <input type="text" name="searchInput" ng-model="vm.searchTitles" required>
+      <button type="submit">Search &rarr;</button>
+    </form>
+
+    <div ng-view></div>
+  </div>
+</body>
+</html>

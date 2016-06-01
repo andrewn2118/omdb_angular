@@ -1,0 +1,36 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+* {
+  text-align: center;
+}
+
+img {
+  height: 150px;
+}
+
+input {
+  text-align: left;
+}
+
+.movie {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  align-content: top;
+}
+
+#info {
+  display: inline-block;
+  text-align: left;
+}
+
+#info img {
+  height: 500px;
+  display: inline-block;
+}
